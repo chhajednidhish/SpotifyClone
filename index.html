@@ -11,7 +11,7 @@
 </head>
 <body>
 
-    <!-- Navbar start -->
+    <!-- Navbar -->
     <nav>
         <ul>
             <li class="brand"> <img src="logo.png" alt="Spotify"> Spotify </li>
@@ -20,11 +20,34 @@
             <li>Contact</li>
         </ul>
     </nav>
-    <!-- Navbar end -->
 
+    <!-- SongsListContainer -->
+    <div class="container">
+        <h1>Best of NCS - No CopyRight Songs</h1>
+
+        <div class="songList"></div>
+        <div class="songBanner"></div>
+    </div>
+
+    <!-- SongDetails/Play -->
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" max="100">
+
+        <div class="icons">
+            <!-- font awesome icons  -->
+            <i class="fas fa-2x fa-fast-backward"></i>
+            <i class="far fa-3x fa-play-circle"></i>
+            <i class="fas fa-2x fa-fast-forward"></i>
+        </div>
+    </div>
 
     <!-- Javascript -->
     <script src="script.js"></script>
+    
+    <!-- This is how we call all the font awesome icons -->
+    <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+
+    
 
 </body>
 </html>

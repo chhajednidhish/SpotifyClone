@@ -6,6 +6,14 @@ font-family: 'Varela Round', sans-serif;
 font-family: 'Zen Antique Soft', serif;
 */
 
+/* Learnings 
+
+    vw: Relative to the viewport’s width
+    vh: Relative to the viewport’s height
+    rem: Relative to the root element (HTML tag)
+
+*/
+
 /* Body */
 *{
     margin: 0;
@@ -17,7 +25,7 @@ body{
 }
 
 
-/* Navbar */
+/* Navbar start */
 nav{
     font-family: 'Zen Antique', serif;
     background-color: black;
@@ -47,3 +55,27 @@ nav ul li{
     height: 32px;
     padding: 0 8px;
 }
+/* Navbar end */
+
+/* SongListContainer start */
+.container{
+    min-height: 75vh;
+}
+/* SongListContainer end */
+
+/* Bottom song start */
+.bottom{
+    position: sticky;
+    height: 100px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+#myProgressBar{
+    width: 80vw;
+}
+/* Bottom song end */
