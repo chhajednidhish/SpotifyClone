@@ -59,8 +59,46 @@ nav ul li{
 
 /* SongListContainer start */
 .container{
-    min-height: 75vh;
+    min-height: 61vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+.songItem{
+    height: 43px;
+    display: flex;
+    background-color:white;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 40px;
+}
+
+.songItem img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+
+.timestamp{
+    margin: 0 25px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
 /* SongListContainer end */
 
 /* Bottom song start */
@@ -71,11 +109,32 @@ nav ul li{
     color: white;
     bottom: 0;
     display: flex;
+    flex-direction: column;
     justify-content:center;
     align-items: center;
 }
 
+.icons{
+    margin-top: 14px;
+}
+
+.icons i{
+    cursor: pointer;
+}
+
 #myProgressBar{
     width: 80vw;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+}
+
+/* We do not want the gif to play all the time, we want it to play only when the song plays so 
+We do its opactity to 0, and whenever the song plays, we can target it's opacity and increase it to 1 */
+.songInfo img{
+    opacity: 0;
+    transition: opacity 1s ease-in;
 }
 /* Bottom song end */
