@@ -124,17 +124,19 @@ nav ul li{
 
 #myProgressBar{
     width: 80vw;
+    cursor: pointer;
 }
 
 .songInfo{
     position: absolute;
     left: 10vw;
+    font-family: 'Varela Round', sans-serif;
 }
 
 /* We do not want the gif to play all the time, we want it to play only when the song plays so 
 We do its opactity to 0, and whenever the song plays, we can target it's opacity and increase it to 1 */
 .songInfo img{
     opacity: 0;
-    transition: opacity 1s ease-in;
+    transition: opacity 0.5s ease-in;
 }
 /* Bottom song end */
